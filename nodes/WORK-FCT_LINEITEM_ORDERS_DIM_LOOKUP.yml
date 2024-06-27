@@ -1,0 +1,461 @@
+steps:
+  FCT_LINEITEM_ORDERS_DIM_LOOKUP-c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: WORK
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: b7d7bb81-3859-4d87-a488-e796f4e85fad
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(38,0)
+            description: ""
+            name: ORDER_CUSTKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8c7e80c6-2024-4b4f-af68-885f34348a55
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: e3a02957-e9d2-481d-b9f2-1a465da458d9
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(38,0)
+            description: ""
+            name: LINEITEM_SUPPKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 95f3a06b-fccd-4687-99c7-c5fefde89fc9
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: f1768d23-5855-49bc-9225-9c076268faf2
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(38,0)
+            description: ""
+            name: LINEITEM_PARTKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 20062ad4-378c-4c28-974d-0589829e2d21
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 7ee85853-3f11-4156-b073-bf23ef7d38ee
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(12,2)
+            description: ""
+            name: ORDER_TOTALPRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 120837a6-6311-4464-9acd-450d12215d04
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 9baccf75-a2b2-4ba6-9365-b78b33e67153
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(38,0)
+            description: ""
+            name: ORDER_SHIPPRIORITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 74c22813-55eb-433d-8900-0f01e0be10e1
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: e22eb0d6-a8b0-4945-8c84-814192badcd7
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: VARCHAR(1)
+            description: ""
+            name: ORDER_ORDERSTATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 270ad97e-b02b-44d1-a63e-cc2abc390e10
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 8584f9d4-d546-4aa9-b608-f7f9ebb31e1d
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: VARCHAR(15)
+            description: ""
+            name: ORDER_ORDERPRIORITY_NUM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: dc635155-e188-42e5-b658-a7d71998d364
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 6866e066-e3c5-429d-84c6-1b5ca7ee7ac8
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: VARCHAR(15)
+            description: ""
+            name: ORDER_ORDERPRIORITY_DESC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 31985ea2-caea-4bff-81a5-b8aa35e956c4
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 6ce8e3da-d28d-40c1-ac62-a8a97bc7c521
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(38,0)
+            description: ""
+            name: ORDER_ORDERKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 68d199c5-d3de-4a4b-9103-239b2845efa4
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 2d5854c1-0a7c-425f-a266-70fb575d48ef
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: DATE
+            description: ""
+            name: ORDER_ORDERDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7ecd8dfd-807a-48d1-9f26-3a24edb882db
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 71b3fe96-15bb-4c44-a157-0ef63e848488
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: VARCHAR(79)
+            description: ""
+            name: ORDER_COMMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 44818115-7bd6-45bd-88e1-8789d0c7793e
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: ad8fa5c9-a403-4d4c-95df-e853d04ab509
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: VARCHAR(15)
+            description: ""
+            name: ORDER_CLERK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0ce12f9a-dcb4-4df8-9f54-68005f9c9c9c
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 3258c6f6-7d5a-4f1f-9b27-067a5c297587
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(12,2)
+            description: ""
+            name: LINEITEM_TAX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d139c2ac-1a1e-4a48-a4d3-cfd0bb813ade
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: d1327dd3-4e7b-4782-a00d-b22c29bc3e93
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: VARCHAR(10)
+            description: ""
+            name: LINEITEM_SHIPMODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 142b733a-ae84-43c0-b0f8-7fe763809b0a
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 91fce958-e5e2-4aa1-a082-686e899bf48b
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: VARCHAR(25)
+            description: ""
+            name: LINEITEM_SHIPINSTRUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0be4c62f-9561-4ab0-af7a-11abf7301fe2
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 171795a3-effe-4ef9-9456-d194fc2341b3
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: DATE
+            description: ""
+            name: LINEITEM_SHIPDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6be0e8f9-2c43-46c0-80ea-ec34c4ca7559
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 2a34e9e0-d4c9-465a-be2e-95884d784f2b
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER
+            description: ""
+            name: DIM_CUSTOMER_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c288c830-7fb0-4b71-a475-cdbc24defa4f
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 5e826eed-b04f-49a0-b6e9-b7b38b45eda8
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: VARCHAR(1)
+            description: ""
+            name: LINEITEM_RETURNFLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b5f1c4b1-6cd0-4ced-9305-716f9ca912cf
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: b8bbed8d-3426-407d-b015-91f4763d2951
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER
+            description: ""
+            name: DIM_PART_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5656171e-a576-4986-b7e2-1bc30f396f75
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: fee6669c-1e57-43e1-ac78-8184a7b879ba
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: DATE
+            description: ""
+            name: LINEITEM_RECEIPTDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 51ea1f2c-c82e-4fc7-b176-5a41dc68b68b
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 325dcdbb-7e39-48fa-a6f3-fd9b27332fdf
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(12,2)
+            description: ""
+            name: LINEITEM_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: dd6934f0-e926-4984-a1bc-8adc99e4cadc
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: c679c599-05ce-40d2-bda3-0e1e3ba0be69
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER
+            description: ""
+            name: DIM_SUPPLIER_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ea00438d-1982-4c3e-9260-2fb6408c91a2
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: b96445c3-afd0-4b08-8146-2ac87b7a13f3
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(38,0)
+            description: ""
+            name: LINEITEM_ORDERKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 44e69991-b9f9-4107-aea8-745d5aaf6880
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 044d1cd5-f78c-4695-8a75-807ccbb498da
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: VARCHAR(1)
+            description: ""
+            name: LINEITEM_LINESTATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f43d9361-d5c1-47ac-b7fc-502629538696
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 44dfb751-34b6-484f-8752-7c94b22908f9
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(38,0)
+            description: ""
+            name: LINEITEM_LINENUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 48dbf37c-1ba4-4277-8a0c-278f332a7a5f
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: b9264b21-2301-447a-8a34-4baa15347587
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(12,2)
+            description: ""
+            name: LINEITEM_EXTENDEDPRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 563dff8c-3576-4803-ab9e-13618063d403
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: cd081972-6447-40b0-8532-2e8709e3a053
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(12,2)
+            description: ""
+            name: LINEITEM_DISCOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 66696b17-672d-4723-9866-8a0f56ccb45d
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: fd4d785c-16f2-47d2-8e31-68b78c013f97
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: DATE
+            description: ""
+            name: LINEITEM_COMMITDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ca03e433-b45f-4ea3-83a7-588fe8fcb1f0
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 202cb414-feff-479a-bca8-f648cdddcad9
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: VARCHAR(44)
+            description: ""
+            name: LINEITEM_COMMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ea3943d4-9e24-46d1-a47b-5b8c37b21092
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - columnReference:
+              columnCounter: 1fd6287d-bcb9-42cf-8653-2d020c301fef
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER
+            description: ""
+            name: DAYS TO SHIP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d9750b7b-b877-4028-a6c1-40b518909fe2
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f7264301-a03f-42e7-9b28-9f88b3976243
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c7890923-98f4-4899-99f9-2789b11826e9
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 866b9072-6328-4128-ba01-fbc07aa8a8ec
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(12,2)
+            description: ""
+            name: PS_SUPPLYCOST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 738bfa4f-2972-4450-865e-bfc1ce9e97a8
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 14789bde-d4d4-4a24-9aba-f77dbf2f0e1d
+              stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
+            dataType: NUMBER(38,0)
+            description: ""
+            name: PS_AVAILQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2028d751-54a3-410a-99a5-33405775fd81
+                    stepCounter: 4eb2eb83-9d04-4f83-94c5-111d32f9e9c1
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: STG_LINEITEM_ORDERS_DIM_LOOKUP
+            join:
+              joinCondition: FROM {{ ref('WORK', 'STG_LINEITEM_ORDERS_DIM_LOOKUP') }} "STG_LINEITEM_ORDERS_DIM_LOOKUP"
+            name: FCT_LINEITEM_ORDERS_DIM_LOOKUP
+            noLinkRefs: []
+      name: FCT_LINEITEM_ORDERS_DIM_LOOKUP
+      overrideSQL: false
+      schema: ""
+      sqlType: Fact
+      type: sql
+    stepCounter: c6d98f28-6183-4c19-9ed6-dae6ca5bdd5b
